@@ -1,0 +1,14 @@
+server:
+  forward-headers-strategy: NATIVE
+  port: 8761
+
+spring:
+  application:
+    name: order-service-discovery
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
